@@ -1,0 +1,151 @@
+body{
+    background-color: #80808054;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0993ce;
+}
+
+.profile-button {
+    background: #0993ce;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #067093;
+}
+
+.profile-button:focus {
+    background: #067093;
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: #067093;
+    box-shadow: none;
+}
+
+.back:hover {
+    color: #067093;
+    cursor: pointer;
+}
+
+.labels {
+    font-size: 11px;
+}
+
+.add-experience:hover {
+    background: #0993ce;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #0993ce;
+}
+
+.btn-danger {
+    border: 1px solid #d63417;
+    background: #d63417;
+    color: white;
+  }
+  
+.btn-danger:hover {
+    background: #ec573c;
+  }
+  
+.btn-danger:active {
+    background: #d63417;
+  }
+.btn-icon-danger:hover {
+    background: #d63417;
+    color: white;
+  }
+.btn-icon {
+    border: 1px solid #e0e0e0;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    color: #6a727a;
+    cursor: pointer;
+  }
+
+  .line{
+    width: 1100px;
+    height: 1px;
+    background-color: #001e8c; 
+    position: absolute;
+    top: 60px;
+    left: 180px;
+}
+
+nav{
+    position: absolute;
+    left: 160px;
+    top:-50px;
+    width: 1150px;
+}
+.medaille{
+    position: absolute;
+    left: 180px;
+    top:10px;
+}
+.entreprisebutton{
+    position: absolute;
+    left: 1150px;
+    top:5px;
+}
+
+.btn-entreprise {
+    background-image: linear-gradient(to right, #87CEEB, #1E90FF); 
+    border-radius: 10px;
+    border: none;
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    cursor: pointer; 
+}
+
+.btn-entreprise:hover {
+    opacity: 0.8;
+}
+.vertical-line {
+    border-left: 1px solid #001e8c; /* Adjust color and thickness as needed */
+    height: 30px; /* Adjust height as needed */
+    position: absolute;
+    left: 840px;
+}
+.searchIcon{
+    position: absolute;
+    left: 790px;
+}
+.mapIcon{
+    position: absolute;
+    left: 840px;
+    top: 18px;
+}
+.footer-group{
+    font-family: HeronSans-Bold, Frutiger-Black;
+    font-weight: bold;
+}
+footer {
+    background: linear-gradient(135deg, #c832ff, #001e8c); /* Gradient from violet to blue */
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-link{
+    font-family: HeronSans-Light;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    font-size: 15px;
+    line-height: 1.17;
+}
+.col-2 {
+    border-radius: 55px; /* Adjust the radius value as needed */
+    border: 2px solid #001e8c;
+    background-color: #ececec;
+    font-family: HeronSans-Medium, Frutiger-Roman;
+}
