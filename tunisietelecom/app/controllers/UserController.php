@@ -182,6 +182,5 @@ class Authentication{
             session_start();
             return isset($_SESSION['user_id']) ? $_SESSION['user_id'] : false;
         }
-
 }
 

@@ -10,7 +10,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <link rel="stylesheet" href="/tunisietelecom/assets/css/backup.css">
     <link rel="stylesheet" href="/tunisietelecom/assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
-
+    
     <title>Tunisie Telecom</title>
 </head>
 <body>
@@ -46,7 +46,7 @@ if (session_status() == PHP_SESSION_NONE) {
             Fix & internet
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="/tunisietelecom/fatoura?file=fatoura.txt">Fatoura</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -78,14 +78,17 @@ if (session_status() == PHP_SESSION_NONE) {
       
     </div>
     <div class="searchIcon">
-  <div class="dropdown" id="searchDropdown">
-    <button onclick="toggleDropdown()">
-      <img src="/tunisietelecom/assets/images/search.png" width="40px" alt="search">
-    </button>
-    <div class="dropdown-content" id="dropdownContent">
-      <input type="text" placeholder="Search...">
+    <div class="dropdown" id="searchDropdown">
+        <button onclick="toggleDropdown()">
+            <img src="/tunisietelecom/assets/images/search.png" width="40px" alt="search">
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <form id="xmlForm" action="/tunisietelecom/search" method="POST" enctype="application/xml">
+              <button type="button" onclick="submitXML()">Search</button>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
   <div class="vertical-line"></div>
 

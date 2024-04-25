@@ -23,6 +23,7 @@ if ($user->profile()){
                   <h1>Welcome</h1>
                   <p>'.$firstname.'</p>
               </div>
+            
           </div>
       </div>
       <div class="profile-info col-md-9">
@@ -48,7 +49,8 @@ if ($user->profile()){
                       </div>
                       <div class="bio-row">
                           <p><span>Email </span>: '.$email.'</p>
-                      </div>                      
+                      </div>    
+                                        
                   </div>
               </div>
           </div>
@@ -58,7 +60,12 @@ if ($user->profile()){
     </div>';
 }
 ?>
-
+<script>
+function updateLabel() {
+    var fileName = document.getElementById("profile_picture").files[0].name;
+    document.getElementById("fileLabel").innerHTML = fileName;
+}
+</script>
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/tunisietelecom/app/views/common/footer.php";
 ?>

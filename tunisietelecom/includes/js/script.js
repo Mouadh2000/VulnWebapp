@@ -39,3 +39,29 @@ variantOptionInput.forEach((input) => {
         e.target.parentElement.parentElement.style.border = '';
     });
 });
+
+
+function submitXML() {
+    var productname = document.getElementById("searchInput").value;
+
+    // Construct XML data
+    var xmlData = '<?xml version="1.0" encoding="ISO-8859-1"?>\n' +
+                  '<products>\n' +
+                  '    <productname>' + productname + '</productname>\n' +
+                  '</products>';
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/tunisietelecom/search", true);
+
+    // Set the Content-Type header to "application/xml"
+    xhr.setRequestHeader("Content-Type", "application/xml");
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText);
+        }
+    };
+
+    xhr.send(xmlData);
+}
+

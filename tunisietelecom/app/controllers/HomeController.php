@@ -7,6 +7,7 @@ class HomeController
     {
         $this->renderView();
     }
+    
     private function renderView()
     {
         include $_SERVER['DOCUMENT_ROOT'] . "/tunisietelecom/app/views/common/header.php";
@@ -82,7 +83,9 @@ class HomeController
     }
         
 }
-$homeController = new HomeController();
-$homeController->index();
+if($_SERVER['REQUEST_METHOD'] === 'GET' ){
+    $homeController = new HomeController();
+    $homeController->index();
+}
 
 

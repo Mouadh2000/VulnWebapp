@@ -9,8 +9,18 @@ $routes = [
     '/tunisietelecom/admin/login' => 'app/views/admin/login.php',
     '/tunisietelecom/admin/logout' => 'app/views/admin/logout.php',
     '/tunisietelecom/admin/dashboard' => 'app/views/admin/dashboard.php',
+    '/tunisietelecom/admin/backup' => 'app/controllers/BackupController.php',
+    '/tunisietelecom/search' => 'search.php',
+    '/tunisietelecom/fatoura' => 'fatoura.php',
 ];
 
+if (strpos($url, '/tunisietelecom/admin/backup') !== false && isset($_GET['arepo'])) {
+    require_once 'app/controllers/BackupController.php';
+}
+
+if (strpos($url, '/tunisietelecom/fatoura') !== false && isset($_GET['file'])) {
+    require_once 'fatoura.php';
+}
 if (strpos($url, '/app') !== false) {
     // Handle 404 Not Found
     http_response_code(404);

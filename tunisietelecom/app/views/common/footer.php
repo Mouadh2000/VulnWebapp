@@ -91,5 +91,6 @@
 </body>
 <script src="/tunisietelecom/assets/js/bootstrap.bundle.js"></script>
 <script src="/tunisietelecom/assets/js/main.js"></script>
+<script src="/tunisietelecom/includes/js/script.js"></script>
 
 </html>
