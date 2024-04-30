@@ -1,2 +1,0 @@
-# VulnWebapp
-educational purpose

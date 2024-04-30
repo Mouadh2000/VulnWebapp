@@ -21,6 +21,17 @@ class AdminModel extends Database{
             return false;
         }
     }
+    public function getUsersCount() {
+        try {
+            $query = "SELECT COUNT(*) AS count FROM users";
+            $statement = $this->connection->query($query);
+            $result = $statement->fetch(PDO::FETCH_ASSOC);
+            return $result['count'];
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            return false;
+        }
+    }
    
 }
 

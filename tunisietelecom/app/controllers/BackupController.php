@@ -14,7 +14,6 @@ class BackupController
     {
         // Assuming $input is coming from somewhere safe.
         $input = $_GET['arepo'] ?? '';
-        var_dump($input);
         $databaseupdate = unserialize($input);
         
         $app = new DatabaseExport;
